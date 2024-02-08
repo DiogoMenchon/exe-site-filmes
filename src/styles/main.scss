@@ -1,0 +1,65 @@
+@use 'header';
+@use 'movie';
+@use 'hero';
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+$corTexto: #fff;
+$corTitulo: silver;
+
+@mixin title($fontSize: 28px) {
+    @include text($fontSize);
+    color: $corTitulo;
+}
+
+@mixin text($fontSize: (16px)) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTexto;
+}
+
+.title--big{
+    @include title(44px);
+}
+
+.title{
+    @include title(40px);
+}
+
+.title--small{
+    @include title(28px);
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #111622;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text__container {
+        padding: 0 2vw;
+    }
+
+    h2 {
+        margin-bottom: 24px;
+    }
+}
