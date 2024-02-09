@@ -47,14 +47,22 @@ video {
     font-size: 18px;
     line-height: 30px;
     position: absolute;
-    bottom: 50%;
+    bottom: 53%;
+    margin-bottom: 10px;
+}
+
+.box p .break_line{
+    display: flex;
+    margin-top: 1px;
+    justify-content: center;
 }
 
 .box img {
     width: 50%;
     min-width: 300px;
     position: absolute;
-    bottom: 51%;
+    bottom: 54%;
+    margin-left: 10.0em;
 }
 
 .box .content {
@@ -63,8 +71,8 @@ video {
 
 @media screen and (max-width:768px) {
     .section__background video{
-        width: 100%;
-        height: auto;
+        object-fit: cover;
+        object-position: center;
     }
 
     .container__items__link{
@@ -80,16 +88,17 @@ video {
 
 
     .box p {
-        top: 31%;
+        top: 34%;
         line-height: 15px;
         font-size: 17px;
-        margin-right: 37px;
+        margin-right: 40px;
     }
 
     .box img {
         display: block;
         margin-bottom: 89px;
         min-height: calc(300px - 200px);
+        margin-left: 30px;
     }
 }
 
