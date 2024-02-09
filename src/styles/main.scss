@@ -1,65 +1,185 @@
-@use 'header';
-@use 'movie';
-@use 'hero';
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: 'arial';
     box-sizing: border-box;
-    font-family: 'Lora', serif;
 }
 
-$corTexto: #fff;
-$corTitulo: silver;
-
-@mixin title($fontSize: 28px) {
-    @include text($fontSize);
-    color: $corTitulo;
+body {
+    width: 100%;
+    min-height: 100vh;
 }
 
-@mixin text($fontSize: (16px)) {
-    font-size: $fontSize;
-    line-height: $fontSize + 10px;
-    color: $corTexto;
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
 }
 
-.title--big{
-    @include title(44px);
+.section__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
 }
 
-.title{
-    @include title(40px);
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.title--small{
-    @include title(28px);
-}
-
-.text--big {
-    @include text(18px);
-}
-
-.text {
-    @include text;
-}
-
-.image-text-section {
-    padding: 5.6vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.box {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    display: flex;
     align-items: center;
-    background-color: #111622;
+    justify-content: center;
+}
 
-    img {
-        max-width: 100%;
+.box p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 50%;
+}
+
+.box img {
+    width: 50%;
+    min-width: 300px;
+    position: absolute;
+    bottom: 51%;
+}
+
+.box .content {
+    width: 80%;
+}
+
+@media screen and (max-width:768px) {
+    .section__background video{
+        width: 100%;
+        height: auto;
     }
 
-    &__text__container {
-        padding: 0 2vw;
+    .container__items__link{
+        margin-left: -6px;
+    }
+    
+    .header__container h1 {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
     }
 
-    h2 {
-        margin-bottom: 24px;
+
+    .box p {
+        top: 31%;
+        line-height: 15px;
+        font-size: 17px;
+        margin-right: 37px;
     }
+
+    .box img {
+        display: block;
+        margin-bottom: 89px;
+        min-height: calc(300px - 200px);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .box {
+        padding: 25px;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+    }
+
+    .box .content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.header__container {
+    padding: 20px;
+    background-color: #060f19;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+}
+
+.container__items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.container__items__link {
+    display: inline;
+    margin-right: 20px;
+}
+
+.container__items__link a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #001F3F;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
 }
