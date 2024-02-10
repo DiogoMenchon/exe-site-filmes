@@ -1,3 +1,8 @@
+@use "carousel";
+@use "header";
+@use "icons";
+@use "background.scss";
+
 * {
     padding: 0;
     margin: 0;
@@ -17,68 +22,18 @@ section {
     overflow-y: hidden;
 }
 
-.section__background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-}
 
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.box {
-    height: 100%;
-    width: 50%;
-    position: relative;
-    z-index: 1;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.box p {
-    color: white;
-    font-size: 18px;
-    line-height: 30px;
-    position: absolute;
-    bottom: 53%;
-    margin-bottom: 10px;
-}
-
-.box p .break_line{
-    display: flex;
-    margin-top: 1px;
-    justify-content: center;
-}
-
-.box img {
-    width: 50%;
-    min-width: 300px;
-    position: absolute;
-    bottom: 54%;
-    margin-left: 10.0em;
-}
-
-.box .content {
-    width: 80%;
-}
 
 @media screen and (max-width:768px) {
-    .section__background video{
+    .section__background video {
         object-fit: cover;
         object-position: center;
     }
 
-    .container__items__link{
+    .container__items__link {
         margin-left: -6px;
     }
-    
+
     .header__container h1 {
         margin: 0;
         display: flex;
@@ -113,82 +68,4 @@ video {
         width: 100%;
         text-align: center;
     }
-}
-
-.header__container {
-    padding: 20px;
-    background-color: #060f19;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    line-height: 70px;
-}
-
-.container__items {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-.container__items__link {
-    display: inline;
-    margin-right: 20px;
-}
-
-.container__items__link a {
-    color: #fff;
-    text-decoration: none;
-    background-color: #001F3F;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga';
-}
-
-.material-icons.md-18 {
-    font-size: 18px;
-}
-
-.material-icons.md-24 {
-    font-size: 24px;
-}
-
-.material-icons.md-36 {
-    font-size: 36px;
-}
-
-.material-icons.md-48 {
-    font-size: 48px;
-}
-
-.material-icons.md-dark {
-    color: rgba(0, 0, 0, 0.54);
-}
-
-.material-icons.md-dark.md-inactive {
-    color: rgba(0, 0, 0, 0.26);
-}
-
-.material-icons.md-light {
-    color: rgba(255, 255, 255, 1);
-}
-
-.material-icons.md-light.md-inactive {
-    color: rgba(255, 255, 255, 0.3);
 }
