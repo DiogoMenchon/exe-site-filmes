@@ -1,4 +1,4 @@
-const sliders = document.querySelectorAll('corousel-container'); // Adicione o ponto antes de 'carousel-container'
+const sliders = document.querySelectorAll('.corousel');
 const prevSlide = document.getElementById('prevBtn');
 const nextSlide = document.getElementById('nextBtn');
 
@@ -22,7 +22,7 @@ function nextSlider() {
     showSlider();
 }
 
-function prevSlider() { // Corrigido para 'prevSlider'
+function prevSlider() {
     hideSlider();
     if (currentSlide === 0) {
         currentSlide = sliders.length - 1;
