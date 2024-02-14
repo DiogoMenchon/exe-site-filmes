@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
                 </a>
             </li>
             <li class="container__items__link">
-                <a href="#"><span class="material-icons md-24" style="vertical-align: middle;">image</span></a>
+                <a href="#imagens"><span class="material-icons md-24" style="vertical-align: middle;">image</span></a>
             </li>
             <li class="container__items__link">
                 <a href="#"><span class="material-icons md-24" style="vertical-align: middle;">portrait</span></a>
@@ -40,7 +43,7 @@
             </div>
         </div>
     </section>
-    <section class="section__cast">
+    <section id="imagens" class="section__cast">
         <h3>Fotos</h3>
         <div id="corousel-container">
             <div class="corousel">
@@ -55,11 +58,11 @@
                 <div class="corousel-item"><img src="dist/images/imagem__9.jpg"></div>
                 <div class="corousel-item"><img src="dist/images/imagem__10.jpg"></div>
             </div>
-            <button id="prevBtn" onclick="prevSlider()">&#10094;</button>
-            <button id="nextBtn" onclick="nextSlider()">&#10095;</button>            
         </div>
     </section>
-    <script src="dist/js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="src/scripts/main.js"></script>
 </body>
-
 </html>

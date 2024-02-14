@@ -1,37 +1,10 @@
-const sliders = document.querySelectorAll('.corousel');
-const prevSlide = document.getElementById('prevBtn');
-const nextSlide = document.getElementById('nextBtn');
-
-let currentSlide = 0;
-
-function hideSlider() {
-    sliders.forEach(item => item.classList.remove('on'));
-}
-
-function showSlider() {
-    sliders[currentSlide].classList.add('on');
-}
-
-function nextSlider() {
-    hideSlider();
-    if (currentSlide === sliders.length - 1) {
-        currentSlide = 0;
-    } else {
-        currentSlide++;
-    }
-    showSlider();
-}
-
-function prevSlider() {
-    hideSlider();
-    if (currentSlide === 0) {
-        currentSlide = sliders.length - 1;
-    } else {
-        currentSlide--;
-    }
-    showSlider();
-}
-
-prevSlide.addEventListener('click', prevSlider);
-nextSlide.addEventListener('click', nextSlider);
-
+$(document).ready(function () {
+    $('.corousel').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    });
+});
