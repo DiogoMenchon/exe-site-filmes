@@ -1,10 +1,26 @@
 .header__container {
     padding: 10px;
-    background-color: #162230;
     color: white;
     display: flex;
     justify-content: space-between;
     line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+#header.roll {
+    background-color: #162230;
+    padding: 5px;
+}
+
+#header.roll a {
+    background-color: #001F3F;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .container__items {
@@ -21,8 +37,5 @@
 .container__items__link a {
     color: #fff;
     text-decoration: none;
-    background-color: #001F3F;
-    box-shadow: 0px 6px 8px rgb(0, 0, 0, 0.6);
     padding: 10px;
-    border-radius: 10px;
 }
