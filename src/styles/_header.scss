@@ -1,6 +1,6 @@
 .header__container {
     padding: 10px;
-    color: white;
+    color: #eebbc3;
     display: flex;
     justify-content: space-between;
     line-height: 70px;
@@ -12,15 +12,23 @@
 }
 
 #header.roll {
-    background-color: #162230;
+    background-color: #121629;
     padding: 5px;
 }
 
 #header.roll a {
-    background-color: #001F3F;
+    background-color: #232946;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 10px;
+}
+
+#header.roll a:hover {
+    background-color: #121629;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+
 }
 
 .container__items {
@@ -35,7 +43,7 @@
 }
 
 .container__items__link a {
-    color: #fff;
+    color: #eebbc3;
     text-decoration: none;
     padding: 10px;
 }
