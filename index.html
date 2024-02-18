@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="src/scripts/lib/slick-1.8.1/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="src/scripts/lib/slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
@@ -15,19 +14,19 @@
 
 <body>
     <header id="header" class="header__container">
-        <h1><span class="material-icons md-36">rocket_launch</span>Watflix</h1>
+        <h1><ion-icon name="rocket-outline"></ion-icon>Watflix</h1>
         <ul class="container__items">
             <li class="container__items__link">
                 <a href="#inicio">
-                    <span class="material-icons md-24" style="vertical-align: middle;">home</span>
+                    <ion-icon name="home" style="vertical-align: middle;"></ion-icon>
                 </a>
             </li>
             <li class="container__items__link">
-                <a href="#imagens"><span class="material-icons md-24" style="vertical-align: middle;">image</span></a>
+                <a href="#imagens"><ion-icon name="image" style="vertical-align: middle;"></ion-icon></a>
             </li>
             <li class="container__items__link">
                 <a href="#elenco">
-                    <span class="material-icons md-24" style="vertical-align: middle;">portrait</span>
+                    <ion-icon name="newspaper" style="vertical-align: middle;"></ion-icon>
                 </a>
             </li>
         </ul>
@@ -48,7 +47,10 @@
     </section>
     <section id="imagens" class="section__carousel">
         <div class="oscar">
-            <a id="link" href="https://en.wikipedia.org/wiki/List_of_accolades_received_by_First_Man"><span class="bold"><div class="square"></div>ganhador de um Oscar</span> 32 vitorias e 193 indicações no total</a>
+            <a id="link" href="https://en.wikipedia.org/wiki/List_of_accolades_received_by_First_Man"><span
+                    class="bold">
+                    <div class="square"></div>ganhador de um Oscar
+                </span> 32 vitorias e 193 indicações no total</a>
         </div>
         <h3>Fotos</h3>
         <div id="corousel-container">
@@ -66,9 +68,27 @@
             </div>
         </div>
     </section>
-    <section id="elenco">
-
-    </section>
+    <footer>
+        <h2><ion-icon name="rocket-outline"></ion-icon>Watflix</h2>
+        <div class="footer__container">
+            <ul class="footer__medias">
+                <li class="footer__medias__items"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li class="footer__medias__items"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li class="footer__medias__items"><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+            <ul class="footer__links">
+                <li class="footer__items"><a href="#">Termos e condições de uso</a></li>
+                <li class="footer__items"><a href="#">Política de privacidade</a></li>
+                <li class="footer__items"><a href="#">Anúcios personalizados</a></li>
+                <li class="footer__items"><a href="#">Dispositivos</a></li>
+                <li class="footer__items"><a href="#">Ajuda</a></li>
+            </ul>
+            <p>Copyright © 2024 Watflix, Inc.</p>
+            <a href="https://www.primevideo.com/-/pt/detail/0KEOK3QTT9ONEOLN0ABFQ3ZAZH/ref=atv_sr_fle_c_Tn74RA_1_1_1?qid=1708269658242&pageTypeIdSource=ASIN&language=pt_BR&sr=1-1&pageTypeId=B07XGCJJSM" class="sites"><img src="src/images/Amazon-Prime-Video-Symbol-832473017.png"></a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="src/scripts/lib/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
