@@ -1,8 +1,8 @@
+@use "_header";
 @use "carousel";
-@use "header";
 @use "background";
-@use "_elenco";
 @use "footer";
+@use "cast";
 
 * {
     padding: 0;
@@ -71,18 +71,18 @@ section {
 }
 
 .oscar a:hover .bold {
-    color: #b8c1ec;
+    color: #e29898  ;
 }
 
 .bold {
     font-weight: bold;
-    color: #eebbc3;
+    color: #cca483;
     margin: 10px;
 }
 
 #link {
     position: relative;
-    border: 1px solid #b8c1ec;
+    border: 1px solid #e29898;
     padding: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -91,7 +91,7 @@ section {
     display: inline-block;
 
     .square {
-        background-color: #b8c1ec;
+        background-color: #e29898;
         height: 40px;
         width: 10px;
         position: absolute;
@@ -106,7 +106,7 @@ section {
 @media screen and (max-width:768px) {
     #link {
         position: relative;
-        border: 1px solid #b8c1ec;
+        border: 1px solid #e29898;
         padding: 10px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -115,7 +115,7 @@ section {
         display: inline-block;
 
         .square {
-            background-color: #b8c1ec;
+            background-color: #e29898;
             height: 40px;
             width: 10px;
             position: absolute;
@@ -131,7 +131,7 @@ section {
 @media screen and (max-width:430px) {
     #link {
         position: relative;
-        border: 1px solid #b8c1ec;
+        border: 1px solid #e29898;
         padding: 10px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -140,7 +140,7 @@ section {
         display: inline-block;
 
         .square {
-            background-color: #b8c1ec;
+            background-color: #e29898;
             height: 60px;
             width: 10px;
             position: absolute;
