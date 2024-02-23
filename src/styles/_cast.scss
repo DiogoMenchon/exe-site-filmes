@@ -1,14 +1,17 @@
 .section__cast {
     background-color: #676f9c;
     padding: 20px;
-    height: 85vh;
+    height: 75%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 
     &__container {
-        display: block;
+        display: grid;
+        align-items: center;
 
         h2 {
-            padding-top: 60px;
+            padding-top: 10px;
             margin: 0 20px;
             text-align: center;
             font-size: 2rem;
@@ -16,33 +19,36 @@
         }
 
         .cast-photo {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             list-style: none;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            position: relative;
+
+            .text-named {
+                color: #eeaa7383;
+                text-align: center;
+            }
 
             a {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
                 text-decoration: none;
                 pointer-events: none;
             }
 
             li {
-                margin: 20px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
 
             p {
-                margin-left: 0;
-                text-align: right;
                 color: #eeab73;
                 font-size: 1.5em;
+                text-align: center;
             }
 
             img {
-                margin: 0;
                 width: 150px;
                 height: 150px;
                 pointer-events: auto;

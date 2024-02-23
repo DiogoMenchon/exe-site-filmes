@@ -1,11 +1,11 @@
 #imagens {
-    height: 48vw;
+    height: 100vh;
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width:375px) and (max-width: 768px) {
     #imagens {
-        height: 200vw;
+        height: 100%;
     }
 
     .section__carousel {
@@ -13,13 +13,17 @@
     }
 
     #corousel-container {
-        width: 100%;
-        overflow: hidden;
+        height: 50%;
+        object-fit: none;
     }
 
     .corousel-item {
-        min-width: 100%; 
-        margin-right: 0;
+        margin: 0 auto;
+
+        img {
+            max-width: 190px;
+            min-height: 100px;
+        }
     }
 }
 
@@ -60,7 +64,6 @@
     }
 
     .corousel-item {
-        min-width: 185px;
         box-sizing: border-box;
         margin-right: 24px;
 
