@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "boostrap": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",

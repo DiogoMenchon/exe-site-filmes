@@ -1,10 +1,10 @@
-#imagens {
+#carouselAutoplay {
     height: 100vh;
     width: 100%;
 }
 
-@media (min-width:375px) and (max-width: 768px) {
-    #imagens {
+@media (min-width: 375px) and (max-width: 768px) {
+    #carouselAutoplay {
         height: 100%;
     }
 
@@ -12,12 +12,11 @@
         padding: 20px;
     }
 
-    #corousel-container {
+    #carouselAutoplaying {
         height: 50%;
-        object-fit: none;
     }
 
-    .corousel-item {
+    .carousel-item {
         margin: 0 auto;
 
         img {
@@ -48,22 +47,7 @@
         margin-bottom: 50px;
     }
 
-    #corousel-container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-    }
-
-    .corousel {
-        display: flex;
-        justify-content: center;
-        transition: transform 0.5s ease-in-out;
-        margin-top: 20px;
-    }
-
-    .corousel-item {
+    .carousel-item {
         box-sizing: border-box;
         margin-right: 24px;
 
@@ -74,7 +58,7 @@
         }
     }
 
-    .corousel-item:last-child {
+    .carousel-item:last-child {
         margin-right: 0;
     }
 }
