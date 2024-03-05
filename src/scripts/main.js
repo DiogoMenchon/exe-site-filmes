@@ -4,3 +4,7 @@
 
         header.classList.toggle('roll', window.scrollY > 850)
     });
+
+    $('#blogCarousel').carousel({
+        interval: 5000
+});
