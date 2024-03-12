@@ -40,15 +40,15 @@ section {
         padding-right: 40px;
     }
 
-    .box{
+    .box {
         width: 100%;
 
-        .content{
+        .content {
             display: flex;
             justify-content: center;
             text-align: center;
-            
-            p{
+
+            p {
                 margin-left: 30px;
             }
         }
@@ -81,18 +81,18 @@ section {
 }
 
 .oscar a:hover .bold {
-    color: #e29898  ;
+    color: gray;
 }
 
 .bold {
     font-weight: bold;
-    color: #cca483;
+    color: white;
     margin: 10px;
 }
 
 #link {
     position: relative;
-    border: 1px solid #e29898;
+    border: 1px solid white;
     padding: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -101,7 +101,7 @@ section {
     display: inline-block;
 
     .square {
-        background-color: #e29898;
+        background-color: white;
         height: 45px;
         width: 10px;
         position: absolute;
@@ -113,10 +113,10 @@ section {
     }
 }
 
-@media (min-width:0px) and (max-width:768px) {
+@media (min-width:100px) and (max-width:768px) {
     #link {
         position: relative;
-        border: 1px solid #e29898;
+        border: 1px solid white;
         padding: 10px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -125,7 +125,7 @@ section {
         display: inline-block;
 
         .square {
-            background-color: #e29898;
+            background-color: white;
             height: 70px;
             width: 10px;
             position: absolute;

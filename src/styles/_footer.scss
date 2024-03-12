@@ -1,10 +1,10 @@
 footer {
-    background-color: #121629;
+    background-color: black;
     padding: 12px 8px;
 
     h2 {
         font-size: 36px;
-        color: #cca483;
+        color: white;
         display: flex;
         justify-content: center;
 
@@ -31,14 +31,14 @@ footer {
             display: inline-block;
 
             a {
-                color: #cca483;
+                color: white;
                 text-decoration: none;
                 padding: 8px 16px;
                 display: block;
             }
 
             a:hover {
-                color: #e29898;
+                color:gray;
             }
         }
     }
@@ -61,17 +61,17 @@ footer {
                 text-decoration: none;
                 padding: 8px;
                 display: block;
-                color: #cca483;
+                color: white;
             }
 
             a:hover {
-                color: #e29898;
+                color: gray;
             }
         }
     }
 
     p {
-        color: #cca483;
+        color: white;
         font-size: 12px;
         display: flex;
         justify-content: center;

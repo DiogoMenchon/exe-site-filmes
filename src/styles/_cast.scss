@@ -1,10 +1,14 @@
 .section__cast {
-    background-color: #676f9c;
+    background-color: rgb(145, 143, 143);
     padding: 20px;
     height: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+
+    p{
+        margin-bottom: 1px;
+    }
 
     &__container {
         display: grid;
@@ -15,7 +19,7 @@
             margin: 0 20px;
             text-align: center;
             font-size: 2rem;
-            color: #cca483;
+            color: white;
         }
 
         .cast-photo {
@@ -25,7 +29,7 @@
             position: relative;
 
             .text-named {
-                color: #eeaa7383;
+                color: white;
                 text-align: center;
             }
 
@@ -47,7 +51,7 @@
             }
 
             p {
-                color: #eeab73;
+                color: white;
                 font-size: 1.5em;
                 text-align: center;
             }

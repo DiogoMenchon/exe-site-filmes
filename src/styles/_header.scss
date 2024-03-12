@@ -1,5 +1,5 @@
 .header__container {
-    color: #cca483;
+    color: white;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -20,7 +20,7 @@
 }
 
 #header.roll {
-    background-color: #121629;
+    background-color: black;
     padding: 10px;
     transition: background-color 0.5s ease-in;
 
@@ -41,17 +41,12 @@
 }
 
 #header.roll a {
-    background-color: #232946;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     padding: 5px 10px 10px;
-    border-radius: 10px;
 }
 
 #header.roll a:hover {
-    background-color: #121629;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 10px;
 }
 
 .container__items {
@@ -71,6 +66,6 @@
 }
 
 .container__items__link a {
-    color: #cca483;
+    color: white;
     text-decoration: none;
 }
