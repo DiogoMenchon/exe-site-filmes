@@ -3,12 +3,13 @@
     "bootstrap": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^9.0.0",
-    "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.7.1",
-    "sass": "^1.70.0"
+    "resolve-url": "^0.2.1",
+    "sass": "^1.70.0",
+    "source-map-resolve": "^0.6.0"
   },
   "name": "exe_landing_page",
   "version": "1.0.0",
