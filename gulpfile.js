@@ -1,35 +1,51 @@
-async function images() {
-    const imagemin = await getImagemin(); // Pegue o módulo importado
-    return gulp.src('./src/images/**/*')
-        .pipe(imagemin()) // Use a função imagemin importada
-        .pipe(gulp.dest('./dist/images'));
-}
-
-const gulp = require('gulp');
+const gulp = require("gulp");
 const sass = require('gulp-sass')(require('sass'));
-const uglify = require('gulp-uglify');
+const sourcemaps = require("gulp-sourcemaps");
+const uglify = require("gulp-uglify");
+const imagemin = require("gulp-imagemin");
+const htmlmin = require("gulp-htmlmin");
 
-function scripts() {
-    return gulp.src('./src/scripts/*.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('./dist/js'))
-}
-
-function styles() {
-    return gulp.src('./src/styles/*.scss')
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(gulp.dest('./dist/css'));
-}
-
-
-function images() {
-    return gulp.src('./src/images/**/*')
+function comprimeImages() {
+    return gulp
+        .src("./src/images/*")
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'));
+        .pipe(gulp.dest("./dist/images"));
 }
 
-exports.default = gulp.parallel(styles, images, scripts);
-exports.watch = function () {
-    gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
-    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))
+
+function comprimeJavascript() {
+    return gulp
+        .src("./src/scripts/*.js")
+        .pipe(uglify())
+        .pipe(gulp.dest("./dist/scripts"));
 }
+
+
+function compilaSass() {
+    return gulp
+        .src("./src/styles/main.scss")
+        .pipe(sourcemaps.init())
+        .pipe(
+            sass({
+                outputStyle: "compressed",
+            }).on("error",sass.logError)
+        )
+        .pipe(sourcemaps.write("./maps"))
+        .pipe(gulp.dest("./dist/styles"));
+}
+
+
+function comprimeHtml() {
+    return gulp
+        .src("*.html")
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest("./dist/html"));
+}
+
+
+exports.default = gulp.parallel(
+    compilaSass,
+    comprimeImages,
+    comprimeJavascript,
+    comprimeHtml
+);
