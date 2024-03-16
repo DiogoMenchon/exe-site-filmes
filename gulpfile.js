@@ -23,7 +23,7 @@ function comprimeJavascript() {
 
 function compilaSass() {
     return gulp
-        .src("./src/styles/main.scss")
+        .src("./src/styles/*.scss")
         .pipe(sourcemaps.init())
         .pipe(
             sass({
